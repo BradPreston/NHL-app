@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.position {
+  width: 25%;
+  margin: 0 50px 50px 50px;
+  justify-self: start;
+}
+
+h4 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.selectTeam {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}

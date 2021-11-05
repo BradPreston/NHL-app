@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nhl api</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>NHL Rosters</h1>
+    <div class="selectTeam">
+      <select onchange="teamIdListener()" name="teamList" id="teamList">
+        <option value="0">Select a team</option>
+      </select>
+    </div>
+    <div id="teams">
+      <h2 id="h2"></h2>
+      <h3>Full 2020/21 Roster</h3>
+      <section id="team">
+        <div class="position">
+          <h4>Right Wing:</h4>
+          <ul id="roster-RW"></ul>
+        </div>
+        <div class="position">
+          <h4>Center:</h4>
+          <ul id="roster-C"></ul>
+        </div>
+        <div class="position">
+          <h4>Left Wing:</h4>
+          <ul id="roster-LW"></ul>
+        </div>
+        <div class="position">
+          <h4>Defense:</h4>
+          <ul id="roster-D"></ul>
+        </div>
+        <div class="position">
+          <h4>Goaltenders:</h4>
+          <ul id="roster-G"></ul>
+        </div>
+      </section>
+    </div>
+    <script src="./scripts.js"></script>
+    <script src="./REST/getAllTeams.js"></script>
+    <script src="./REST/getSingleTeam.js" type="module"></script>
+    <script src="./REST/getRoster.js" type="module"></script>
+  </body>
+</html>
